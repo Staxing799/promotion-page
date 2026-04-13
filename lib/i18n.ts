@@ -626,7 +626,7 @@ landingPageCopy.zh = {
     title: "让一个高表现商品视频，直接走向全球市场。",
     description:
       "从一个源视频开始，为本季度最重要的国家和渠道导出多语言字幕、配音和口型同步版本。",
-    primaryCta: "预约演示",
+    primaryCta: "立即体验",
     secondaryCta: "回到顶部",
   },
 };

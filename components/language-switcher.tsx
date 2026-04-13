@@ -107,12 +107,11 @@ export function LanguageSwitcher({
     }
 
     const nextPathname = getNextPathname(pathname, nextLocale);
-    const hash = typeof window !== "undefined" ? window.location.hash : "";
 
     document.cookie = `${localeCookieName}=${nextLocale}; path=/; max-age=31536000; samesite=lax`;
 
     startTransition(() => {
-      router.push(`${nextPathname}${hash}`);
+      router.push(nextPathname);
     });
   };
 
