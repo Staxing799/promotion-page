@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { LandingPageContent, Locale } from "../lib/i18n";
 import { platformItems } from "../lib/i18n";
 import { LanguageSwitcher } from "./language-switcher";
+import { PricingSection } from "./pricing-section";
 import { RevealObserver } from "./reveal-observer";
 import { ScrollLink } from "./scroll-link";
 import { ScrollReset } from "./scroll-reset";
@@ -242,34 +243,7 @@ export function LandingPage({ content, locale }: LandingPageProps) {
       </section>
 
       <section className="section" id="pricing">
-        <div className="section-head reveal">
-          <h2>{content.pricing.title}</h2>
-          <p>{content.pricing.description}</p>
-        </div>
-
-        <div className="card-grid card-grid-three">
-          {content.pricing.cards.map((plan, index) => (
-            <article
-              className={`panel-card pricing-card reveal${
-                plan.featured ? " pricing-card-featured" : ""
-              }`}
-              key={plan.name}
-              style={getRevealDelayStyle(index)}
-            >
-              <span className="card-tag">{plan.name}</span>
-              <h3>{plan.price}</h3>
-              <p>{plan.detail}</p>
-              <ul className="feature-list">
-                {plan.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
-                ))}
-              </ul>
-              <ScrollLink className="button button-secondary" targetId="cta">
-                {plan.cta}
-              </ScrollLink>
-            </article>
-          ))}
-        </div>
+        <PricingSection pricing={content.pricing} />
       </section>
 
       <section className="section" id="blog">
@@ -315,24 +289,6 @@ export function LandingPage({ content, locale }: LandingPageProps) {
         </div>
       </section>
 
-      <section className="section cta-section" id="cta">
-        <div className="cta-panel reveal">
-          <h2>{content.cta.title}</h2>
-          <p>{content.cta.description}</p>
-
-          <div className="hero-actions">
-            <a
-              className="button button-primary"
-              href="https://www.lipsync.show/create"
-            >
-              {content.cta.primaryCta}
-            </a>
-            <ScrollLink className="button button-secondary" targetId="hero">
-              {content.cta.secondaryCta}
-            </ScrollLink>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
