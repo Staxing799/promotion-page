@@ -208,7 +208,48 @@ export function LanguageSwitcher({
         <span className="language-trigger-glow" aria-hidden="true" />
         <span className="language-trigger-main">
           <span className="language-icon" aria-hidden="true">
-            <span className="language-icon-core" />
+            <svg
+              className="language-icon-svg"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                className="language-icon-orbit"
+                cx="15.5"
+                cy="16"
+                r="8.25"
+              />
+              <path
+                className="language-icon-latitude"
+                d="M8.8 16H22.2"
+              />
+              <path
+                className="language-icon-latitude"
+                d="M10.7 12.25C12.05 11.45 13.7 11 15.5 11C17.3 11 18.95 11.45 20.3 12.25"
+              />
+              <path
+                className="language-icon-latitude"
+                d="M10.7 19.75C12.05 20.55 13.7 21 15.5 21C17.3 21 18.95 20.55 20.3 19.75"
+              />
+              <path
+                className="language-icon-meridian"
+                d="M15.5 7.75C13.55 10 12.5 12.92 12.5 16C12.5 19.08 13.55 22 15.5 24.25"
+              />
+              <path
+                className="language-icon-meridian"
+                d="M15.5 7.75C17.45 10 18.5 12.92 18.5 16C18.5 19.08 17.45 22 15.5 24.25"
+              />
+              <path
+                className="language-icon-accent"
+                d="M22.75 9.25H26.25"
+              />
+              <path
+                className="language-icon-accent"
+                d="M24.5 7.5V11"
+              />
+            </svg>
+            <span className="language-icon-dot" />
           </span>
           <span className="language-trigger-copy">
             <small>{label}</small>
