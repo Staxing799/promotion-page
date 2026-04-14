@@ -4,6 +4,8 @@ import { platformItems } from "../lib/i18n";
 import { LanguageSwitcher } from "./language-switcher";
 import { PricingSection } from "./pricing-section";
 import { RevealObserver } from "./reveal-observer";
+import { SeoJsonLd } from "./seo-json-ld";
+import { SeoSections } from "./seo-sections";
 import { ScrollLink } from "./scroll-link";
 import { ScrollReset } from "./scroll-reset";
 
@@ -32,6 +34,7 @@ export function LandingPage({ content, locale }: LandingPageProps) {
 
   return (
     <main className="page-shell">
+      <SeoJsonLd content={content} locale={locale} />
       <RevealObserver />
       <ScrollReset />
       <div className="ambient ambient-top" />
@@ -290,6 +293,24 @@ export function LandingPage({ content, locale }: LandingPageProps) {
         </div>
       </section>
 
+      <SeoSections locale={locale} />
+
+      <section className="section cta-section" id="cta">
+        <div className="cta-panel reveal">
+          <span className="eyebrow">{content.cta.eyebrow}</span>
+          <h2>{content.cta.title}</h2>
+          <p>{content.cta.description}</p>
+
+          <div className="hero-actions">
+            <a className="button button-primary" href={createPageUrl}>
+              {content.cta.primaryCta}
+            </a>
+            <ScrollLink className="button button-secondary" targetId="hero">
+              {content.cta.secondaryCta}
+            </ScrollLink>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

@@ -8,6 +8,7 @@ import {
   locales,
   type Locale,
 } from "../../lib/i18n";
+import { getLocaleMetadata } from "../../lib/seo";
 
 type LocalePageProps = {
   params: Promise<{
@@ -34,10 +35,7 @@ export async function generateMetadata({
   const locale = isLocale(localeParam) ? localeParam : defaultLocale;
   const metadata = landingPageCopy[locale].metadata;
 
-  return {
-    title: metadata.title,
-    description: metadata.description,
-  };
+  return getLocaleMetadata(locale, metadata);
 }
 
 export default async function LocalePage({ params }: LocalePageProps) {

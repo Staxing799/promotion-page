@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Manrope, Sora } from "next/font/google";
 import { defaultLocale, isLocale } from "../lib/i18n";
+import { getMetadataBase, siteName } from "../lib/seo";
 import "./globals.css";
 
 const bodyFont = Manrope({
@@ -15,9 +16,32 @@ const headingFont = Sora({
 });
 
 export const metadata: Metadata = {
+  metadataBase: getMetadataBase(),
+  applicationName: siteName,
   title: "Lipsync.show | AI Video Localization for Global Commerce",
   description:
     "Upload one ecommerce video and turn it into multilingual subtitles, translated voiceovers, and lip-matched video variants for every storefront.",
+  category: "software",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName,
+    title: "Lipsync.show | AI Video Localization for Global Commerce",
+    description:
+      "Upload one ecommerce video and turn it into multilingual subtitles, translated voiceovers, and lip-matched video variants for every storefront.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lipsync.show | AI Video Localization for Global Commerce",
+    description:
+      "Upload one ecommerce video and turn it into multilingual subtitles, translated voiceovers, and lip-matched video variants for every storefront.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 type RootLayoutProps = Readonly<{

@@ -2218,6 +2218,52 @@ h3 {
   transform: scaleX(1);
 }
 
+.keyword-cluster-card,
+.seo-intent-card {
+  min-height: 19rem;
+}
+
+.keyword-pill-list,
+.seo-term-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.72rem;
+  margin: 1.35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keyword-pill-list li,
+.seo-term-list li {
+  position: relative;
+  padding: 0.52rem 0.82rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    rgba(255, 255, 255, 0.02);
+  color: rgba(247, 243, 255, 0.86);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  transition:
+    transform var(--motion-fast) var(--ease-out),
+    border-color var(--motion-fast) var(--ease-out),
+    background-color var(--motion-fast) var(--ease-out);
+}
+
+.keyword-pill-list li:hover,
+.seo-term-list li:hover {
+  transform: translateY(-2px);
+  border-color: rgba(168, 103, 255, 0.28);
+  background:
+    linear-gradient(180deg, rgba(168, 103, 255, 0.12), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.03);
+}
+
+.seo-intent-card {
+  min-height: 18rem;
+}
+
 .cta-section {
   padding-top: clamp(5rem, 8vw, 6.75rem);
   padding-bottom: clamp(5.5rem, 8vw, 7rem);
