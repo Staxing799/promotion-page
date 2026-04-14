@@ -267,20 +267,16 @@ img {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #d4a8ff, var(--accent-strong));
-  box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 0 28px rgba(122, 61, 255, 0.52);
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
 }
 
-.brand-core {
-  width: 0.72rem;
-  height: 0.72rem;
-  border-radius: 999px;
-  background: #0d0b17;
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 18px rgba(122, 61, 255, 0.32));
 }
 
 .brand-name,

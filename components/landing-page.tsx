@@ -14,6 +14,7 @@ type LandingPageProps = {
 
 const heroVideoUrl =
   "https://rs.magicface.co/indiesites/lipsync-show/landingpage/hero-video-2.webm";
+const createPageUrl = "https://www.lipsync.show/create";
 
 type MotionStyle = CSSProperties & {
   "--reveal-delay"?: string;
@@ -43,13 +44,13 @@ export function LandingPage({ content, locale }: LandingPageProps) {
         <ScrollLink
           className="brand"
           targetId="hero"
-          aria-label="ShopSync.show home"
+          aria-label="Lipsync.show home"
         >
           <span className="brand-mark">
-            <span className="brand-core" />
+            <img className="brand-logo" src="/logo.svg" alt="" aria-hidden="true" />
           </span>
           <span className="brand-name">
-            ShopSync<span>.show</span>
+            Lipsync<span>.show</span>
           </span>
         </ScrollLink>
 
@@ -262,9 +263,9 @@ export function LandingPage({ content, locale }: LandingPageProps) {
               <span className="card-tag">{post.tag}</span>
               <h3>{post.title}</h3>
               <p>{post.description}</p>
-              <ScrollLink className="text-link" targetId="cta">
+              <a className="text-link" href={createPageUrl}>
                 {post.cta}
-              </ScrollLink>
+              </a>
             </article>
           ))}
         </div>

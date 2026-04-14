@@ -15,7 +15,7 @@ const headingFont = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "ShopSync.show | AI Video Localization for Global Commerce",
+  title: "Lipsync.show | AI Video Localization for Global Commerce",
   description:
     "Upload one ecommerce video and turn it into multilingual subtitles, translated voiceovers, and lip-matched video variants for every storefront.",
 };

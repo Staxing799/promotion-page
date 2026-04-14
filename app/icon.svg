@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="72.3614387%" y2="94.8334316%" id="linearGradient-1">
+            <stop stop-color="#CDD4FF" offset="0%"></stop>
+            <stop stop-color="#CC83FF" offset="35.2415141%"></stop>
+            <stop stop-color="#B484FF" offset="84.5017254%"></stop>
+            <stop stop-color="#9376FF" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="60" cy="60" r="44"></circle>
+        <filter x="-39.2%" y="-32.4%" width="178.4%" height="178.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.476117886   0 0 0 0 0.0570121951   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-2">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+        <path d="M37,57 L83,57 L83,59 C83,71.7025492 72.7025492,82 60,82 C47.2974508,82 37,71.7025492 37,59 L37,57 L37,57 Z" id="Rectangle" fill="#111729"></path>
+    </g>
+</svg>

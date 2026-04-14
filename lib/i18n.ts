@@ -197,7 +197,7 @@ export function pickPreferredLocale(
 
 landingPageCopy.en = {
   metadata: {
-    title: "ShopSync.show | AI Video Localization for Global Commerce",
+    title: "Lipsync.show | AI Video Localization for Global Commerce",
     description:
       "Upload one ecommerce video and turn it into multilingual subtitles, translated voiceovers, and lip-matched video variants for every storefront.",
   },
@@ -450,7 +450,7 @@ landingPageCopy.en = {
 
 landingPageCopy.zh = {
   metadata: {
-    title: "ShopSync.show | 跨境商品视频本地化工具",
+    title: "Lipsync.show | 跨境商品视频本地化工具",
     description:
       "把一条商品视频快速做成多语言字幕、配音和口型同步版本，适合上架、投放和独立站复用。",
   },
@@ -699,7 +699,7 @@ landingPageCopy.zh = {
 
 landingPageCopy.es = {
   metadata: {
-    title: "ShopSync.show | Localización de video con IA para ecommerce global",
+    title: "Lipsync.show | Localización de video con IA para ecommerce global",
     description:
       "Sube un solo video de producto y conviértelo en versiones con subtítulos, voz y lip sync para varios idiomas.",
   },
@@ -952,7 +952,7 @@ landingPageCopy.es = {
 
 landingPageCopy.fr = {
   metadata: {
-    title: "ShopSync.show | Localisation vidéo IA pour l’e-commerce international",
+    title: "Lipsync.show | Localisation vidéo IA pour l’e-commerce international",
     description:
       "Importez une seule vidéo produit et générez des versions multilingues avec sous-titres, voix et lip sync.",
   },
@@ -1205,7 +1205,7 @@ landingPageCopy.fr = {
 
 landingPageCopy.de = {
   metadata: {
-    title: "ShopSync.show | KI-Videolokalisierung für globalen E-Commerce",
+    title: "Lipsync.show | KI-Videolokalisierung für globalen E-Commerce",
     description:
       "Lade ein Produktvideo hoch und erstelle mehrsprachige Versionen mit Untertiteln, Voice-over und Lip Sync.",
   },
@@ -1458,7 +1458,7 @@ landingPageCopy.de = {
 
 landingPageCopy.ja = {
   metadata: {
-    title: "ShopSync.show | グローバルEC向けAI動画ローカライズ",
+    title: "Lipsync.show | グローバルEC向けAI動画ローカライズ",
     description:
       "1本の商品動画から、多言語字幕、吹き替え音声、口パク同期付きの各国向け動画を生成します。",
   },
